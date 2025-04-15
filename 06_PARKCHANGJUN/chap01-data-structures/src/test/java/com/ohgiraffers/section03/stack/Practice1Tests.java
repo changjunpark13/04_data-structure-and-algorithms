@@ -37,6 +37,7 @@ class Practice1Tests {
     @MethodSource("provideTestCases")
     void testParenthesisString(String input, String expected) {
         String result = practice1.solution(input);
+        System.out.println(input + " : " + result); // 여기에서 출력
         Assertions.assertEquals(expected, result);
 
     }
